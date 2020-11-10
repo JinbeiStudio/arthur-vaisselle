@@ -324,7 +324,7 @@ footer a {
 
 #nosCollections img {
   flex-grow: 1;
-  height: auto;
+  height: 100%;
   min-width: 33.33%;
 }
 

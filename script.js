@@ -60,6 +60,10 @@ function choixCollection() {
         imgCollectionPortait.setAttribute("src", "images/ecume1.jpg");
         imgCollectionPaysage1.setAttribute("src", "images/ecume3.jpg");
         imgCollectionPaysage2.setAttribute("src", "images/ecume2.jpg");
+      } else if (clickCollection[i].innerHTML == "Nordic") {
+        imgCollectionPortait.setAttribute("src", "images/nordic1.jpg");
+        imgCollectionPaysage1.setAttribute("src", "images/ecume3.jpg");
+        imgCollectionPaysage2.setAttribute("src", "images/nordic2.jpg");
       }
     });
   }
