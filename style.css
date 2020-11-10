@@ -369,8 +369,14 @@ footer a {
 #liensCollections li {
   margin: 0px 30px 10px 30px;
   font-size: 1em;
-  line-height: 1.2em;
+  line-height: 1.5em;
   font-family: "cinzelregular", Arial, Helvetica, sans-serif;
+}
+
+.selectedCollection {
+  color: white;
+  background-color: var(--teal);
+  padding: 7px;
 }
 
 /* ------------------------------ Notre Univers ----------------------------- */
