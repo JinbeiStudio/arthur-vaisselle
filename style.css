@@ -223,8 +223,8 @@ header svg {
   margin: 0px 20px;
 }
 
-.pictoServices img {
-  margin: 20px 20px;
+.pictoServices svg {
+  margin: 0 20px 20px 20px;
 }
 
 .pictoServices figcaption {
@@ -253,9 +253,20 @@ header svg {
 }
 
 .newsletter input {
-  height: 25px;
+  height: 40px;
   padding: 0 20px;
   border-color: transparent;
+  color: var(--teal);
+}
+
+.formNewsletter svg {
+  margin: 0;
+}
+
+.formNewsletter button {
+  width: 45px;
+  height: 45px;
+  padding: 0;
 }
 
 /* --------------------------------- Footer --------------------------------- */
