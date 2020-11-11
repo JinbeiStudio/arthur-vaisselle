@@ -62,8 +62,16 @@ function choixCollection() {
         imgCollectionPaysage2.setAttribute("src", "images/ecume2.jpg");
       } else if (clickCollection[i].innerHTML == "Nordic") {
         imgCollectionPortait.setAttribute("src", "images/nordic1.jpg");
-        imgCollectionPaysage1.setAttribute("src", "images/ecume3.jpg");
+        imgCollectionPaysage1.setAttribute("src", "images/nordic3.jpg");
         imgCollectionPaysage2.setAttribute("src", "images/nordic2.jpg");
+      } else if (clickCollection[i].innerHTML == "Perle") {
+        imgCollectionPortait.setAttribute("src", "images/pearl1.jpg");
+        imgCollectionPaysage1.setAttribute("src", "images/pearl3.jpg");
+        imgCollectionPaysage2.setAttribute("src", "images/pearl2.jpg");
+      } else if (clickCollection[i].innerHTML == "Saint-Tropez") {
+        imgCollectionPortait.setAttribute("src", "images/saint-tropez1.jpg");
+        imgCollectionPaysage1.setAttribute("src", "images/saint-tropez3.jpg");
+        imgCollectionPaysage2.setAttribute("src", "images/saint-tropez2.jpg");
       }
     });
   }
@@ -83,6 +91,8 @@ function subNav() {
   let servicesNav = document.getElementById("servicesNav");
   let linkcollections = document.getElementById("collectionsHover");
   let collectionsNav = document.getElementById("collectionsNav");
+  let linkinspiration = document.getElementById("inspirationHover");
+  let linkarthur = document.getElementById("arthurHover");
 
   /* -------------------------------------------------------------------------- */
   /*                             Sous-Menu Vaisselle                            */
@@ -96,7 +106,6 @@ function subNav() {
       collectionsNav.style.display = "none";
       vaisselleNav.style.display = "flex";
       document.getElementById("main").style.opacity = "30%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -106,7 +115,6 @@ function subNav() {
     function (event) {
       vaisselleNav.style.display = "none";
       document.getElementById("main").style.opacity = "100%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -124,7 +132,6 @@ function subNav() {
       collectionsNav.style.display = "none";
       couvertsNav.style.display = "flex";
       document.getElementById("main").style.opacity = "30%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -134,7 +141,6 @@ function subNav() {
     function (event) {
       couvertsNav.style.display = "none";
       document.getElementById("main").style.opacity = "100%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -152,7 +158,6 @@ function subNav() {
       collectionsNav.style.display = "none";
       verresNav.style.display = "flex";
       document.getElementById("main").style.opacity = "30%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -162,7 +167,6 @@ function subNav() {
     function (event) {
       verresNav.style.display = "none";
       document.getElementById("main").style.opacity = "100%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -180,7 +184,6 @@ function subNav() {
       collectionsNav.style.display = "none";
       servicesNav.style.display = "flex";
       document.getElementById("main").style.opacity = "30%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -190,7 +193,6 @@ function subNav() {
     function (event) {
       servicesNav.style.display = "none";
       document.getElementById("main").style.opacity = "100%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -205,7 +207,6 @@ function subNav() {
       servicesNav.style.display = "none";
       collectionsNav.style.display = "flex";
       document.getElementById("main").style.opacity = "30%";
-      setTimeout(function () {}, 500);
     },
     false
   );
@@ -215,8 +216,25 @@ function subNav() {
     function (event) {
       collectionsNav.style.display = "none";
       document.getElementById("main").style.opacity = "100%";
-      setTimeout(function () {}, 500);
     },
     false
   );
+
+  linkinspiration.addEventListener("mouseover", function (event) {
+    vaisselleNav.style.display = "none";
+    couvertsNav.style.display = "none";
+    verresNav.style.display = "none";
+    servicesNav.style.display = "none";
+    collectionsNav.style.display = "none";
+    document.getElementById("main").style.opacity = "100%";
+  });
+
+  linkarthur.addEventListener("mouseover", function (event) {
+    vaisselleNav.style.display = "none";
+    couvertsNav.style.display = "none";
+    verresNav.style.display = "none";
+    servicesNav.style.display = "none";
+    collectionsNav.style.display = "none";
+    document.getElementById("main").style.opacity = "100%";
+  });
 }
