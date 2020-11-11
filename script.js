@@ -34,7 +34,6 @@ function choixCollection() {
   let imgCollectionPaysage2 = document.getElementById("imgCollectionPaysage2");
   let descriptionCollection = document.getElementById("descriptionCollection");
   let clickCollection = document.getElementsByClassName("clickCollection");
-
   for (let i = 0; i < clickCollection.length; i++) {
     clickCollection[i].addEventListener("click", function (event) {
       for (let i = 0; i < clickCollection.length; i++) {
@@ -237,4 +236,11 @@ function subNav() {
     collectionsNav.style.display = "none";
     document.getElementById("main").style.opacity = "100%";
   });
+}
+
+function preload() {
+  for (i = 0; i < preload.arguments.length; i++) {
+    images[i] = new Image();
+    images[i].src = preload.arguments[i];
+  }
 }
