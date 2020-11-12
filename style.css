@@ -12,6 +12,10 @@
 /*                                    Général                                 */
 /* -------------------------------------------------------------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "raleway", Arial, Helvetica, sans-serif;
   line-height: 1.5em;
@@ -208,6 +212,10 @@ header svg {
   height: 100%;
 }
 
+.logoArthur {
+  margin: 0 0 0 50px;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   Footer                                   */
 /* -------------------------------------------------------------------------- */
@@ -265,7 +273,7 @@ header svg {
 
 .formNewsletter button {
   width: 45px;
-  height: 45px;
+  height: 40px;
   padding: 0;
 }
 
@@ -536,4 +544,184 @@ footer a {
 
 .instagram img {
   margin: 0 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Page Listing                                */
+/* -------------------------------------------------------------------------- */
+.mainListing section {
+  margin: 0;
+}
+
+.titleListing {
+  display: flex;
+  text-align: center;
+  color: white;
+}
+
+.titleListing h2 {
+  margin-bottom: 20px;
+}
+
+.titleListing img {
+  min-width: 50%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.titleListing article {
+  background-color: var(--darkGrey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.currentNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--teal);
+}
+
+.currentNav a {
+  color: var(--teal);
+  margin: 0 10px;
+}
+
+.filterCollection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  height: 60px;
+  border-bottom: solid 2px var(--darkGrey);
+}
+
+.filterCollection a {
+  margin: 0 20px;
+}
+
+.filterCollection a:hover {
+  text-decoration: none;
+}
+
+.listingProducts {
+  display: flex;
+  min-width: 100%;
+  margin: 50px 0;
+}
+
+.listingFilters {
+  min-width: 20%;
+  text-align: center;
+}
+
+.listingFiches {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.listingFiches img {
+  object-fit: cover;
+  transition: filter 0.5s ease-in-out;
+}
+
+.listingPrice {
+  display: flex;
+  justify-content: center;
+}
+
+.listingPrice div {
+  margin: 10px 20px;
+}
+
+.listingPrice div p:first-of-type {
+  font-size: 1.2em;
+}
+
+.listingPrice div p:nth-of-type(2),
+.listingCards p:first-of-type {
+  font-size: 0.9em;
+}
+
+.listingPrice div:first-of-type {
+  text-decoration: line-through;
+  color: var(--red);
+}
+
+.listingFiches input,
+.listingFiches button {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  font-size: 1em;
+  margin: 0 5px;
+  background-color: white;
+  border: 2px solid var(--teal);
+  padding: 0 5px;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.listingFiches article:hover input,
+.listingFiches article:hover button,
+.listingFiches article:hover > p,
+.listingFiches article:hover svg {
+  visibility: visible;
+  opacity: 1;
+}
+
+.listingFiches article:hover img {
+  filter: brightness(0.5);
+}
+
+.listingButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectedFilterCollection {
+  position: relative;
+}
+
+.selectedFilterCollection::after {
+  content: " ";
+  border-bottom: solid 2px teal;
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+}
+
+.promoPercent {
+  position: absolute;
+  top: 17px;
+  left: 70px;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.wishlistListing {
+  position: absolute;
+  top: 15px;
+  left: 220px;
+  fill: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.wishlistListing:hover {
+  fill: var(--teal);
 }
