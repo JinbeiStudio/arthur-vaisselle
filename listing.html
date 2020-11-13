@@ -495,64 +495,66 @@
       </section>
       <div class="listingProducts">
         <section class="listingFilters">
-          <h4>Filtrer par</h4>
-          <article>
-            <h5>Matière</h5>
-            <div>
-              <input type="checkbox" name="ceramique" id="ceramique" />
-              <label for="ceramique">Céramique</label>
-            </div>
-            <div>
-              <input type="checkbox" name="gres" id="gres" />
-              <label for="gres">Grès</label>
-            </div>
-            <div>
-              <input type="checkbox" name="inox" id="inox" />
-              <label for="inox">Inox</label>
-            </div>
-            <div>
-              <input type="checkbox" name="inox" id="inox" />
-              <label for="inox">Inox</label>
-            </div>
-          </article>
-          <article>
-            <h5>Couleur</h5>
-            <div>
-              <input type="checkbox" name="bleu" id="bleu" />
-              <label for="bleu">Bleu</label>
-            </div>
-            <div>
-              <input type="checkbox" name="vert" id="vert" />
-              <label for="vert">Vert</label>
-            </div>
-            <div>
-              <input type="checkbox" name="rouge" id="rouge" />
-              <label for="rouge">Rouge</label>
-            </div>
-            <div>
-              <input type="checkbox" name="jaune" id="jaune" />
-              <label for="jaune">Jaune</label>
-            </div>
-          </article>
-          <article>
-            <h5>Type</h5>
-            <div>
-              <input type="checkbox" name="plates" id="plates" />
-              <label for="plates">Plates</label>
-            </div>
-            <div>
-              <input type="checkbox" name="creuses" id="creuses" />
-              <label for="creuses">Creuses</label>
-            </div>
-            <div>
-              <input type="checkbox" name="dessert" id="dessert" />
-              <label for="dessert">Dessert</label>
-            </div>
-          </article>
-          <article>
-            <h5>Prix</h5>
-            <input type="range" name="prix" id="prix" min="1" max="1000" />
-          </article>
+          <div>
+            <h4>Filtrer par</h4>
+            <article>
+              <h5>Matière</h5>
+              <div>
+                <input type="checkbox" name="ceramique" id="ceramique" />
+                <label for="ceramique">Céramique</label>
+              </div>
+              <div>
+                <input type="checkbox" name="gres" id="gres" />
+                <label for="gres">Grès</label>
+              </div>
+              <div>
+                <input type="checkbox" name="inox" id="inox" />
+                <label for="inox">Inox</label>
+              </div>
+              <div>
+                <input type="checkbox" name="inox" id="inox" />
+                <label for="inox">Inox</label>
+              </div>
+            </article>
+            <article>
+              <h5>Couleur</h5>
+              <div>
+                <input type="checkbox" name="bleu" id="bleu" />
+                <label for="bleu">Bleu</label>
+              </div>
+              <div>
+                <input type="checkbox" name="vert" id="vert" />
+                <label for="vert">Vert</label>
+              </div>
+              <div>
+                <input type="checkbox" name="rouge" id="rouge" />
+                <label for="rouge">Rouge</label>
+              </div>
+              <div>
+                <input type="checkbox" name="jaune" id="jaune" />
+                <label for="jaune">Jaune</label>
+              </div>
+            </article>
+            <article>
+              <h5>Type</h5>
+              <div>
+                <input type="checkbox" name="plates" id="plates" />
+                <label for="plates">Plates</label>
+              </div>
+              <div>
+                <input type="checkbox" name="creuses" id="creuses" />
+                <label for="creuses">Creuses</label>
+              </div>
+              <div>
+                <input type="checkbox" name="dessert" id="dessert" />
+                <label for="dessert">Dessert</label>
+              </div>
+            </article>
+            <article>
+              <h5>Prix</h5>
+              <input type="range" name="prix" id="prix" min="1" max="1000" />
+            </article>
+          </div>
         </section>
         <section class="listingFiches">
           <article>
@@ -612,11 +614,14 @@
             </a>
           </article>
           <article>
-            <img src="" alt="" />
-            <h4>Assiettes creuses en céramique</h4>
+            <img src="images/assiette2.jpg" width="200" height="230" alt="" />
+            <h4>
+              Assiettes creuses <br />
+              en céramique
+            </h4>
             <p>Lot de 50</p>
             <h5>Collection Abysse</h5>
-            <div>
+            <div class="listingPrice">
               <div>
                 <p>300 €</p>
                 <p>6€ l'unité</p>
@@ -626,7 +631,7 @@
                 <p>5€ l'unité</p>
               </div>
             </div>
-            <div>
+            <div class="listingButtons">
               <input
                 value="50"
                 min="50"
@@ -635,15 +640,44 @@
                 name=""
                 id=""
               />
-              <button></button>
+              <button>
+                <svg
+                  class="tealIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
+                  />
+                </svg>
+              </button>
             </div>
+            <p class="promoPercent">- 20%</p>
+            <a>
+              <svg
+                class="wishlistListing"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+                />
+              </svg>
+            </a>
           </article>
           <article>
-            <img src="" alt="" />
-            <h4>Assiettes creuses en céramique</h4>
+            <img src="images/assiette2.jpg" width="200" height="230" alt="" />
+            <h4>
+              Assiettes creuses <br />
+              en céramique
+            </h4>
             <p>Lot de 50</p>
             <h5>Collection Abysse</h5>
-            <div>
+            <div class="listingPrice">
               <div>
                 <p>300 €</p>
                 <p>6€ l'unité</p>
@@ -653,7 +687,7 @@
                 <p>5€ l'unité</p>
               </div>
             </div>
-            <div>
+            <div class="listingButtons">
               <input
                 value="50"
                 min="50"
@@ -662,8 +696,34 @@
                 name=""
                 id=""
               />
-              <button></button>
+              <button>
+                <svg
+                  class="tealIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
+                  />
+                </svg>
+              </button>
             </div>
+            <p class="promoPercent">- 20%</p>
+            <a>
+              <svg
+                class="wishlistListing"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+                />
+              </svg>
+            </a>
           </article>
         </section>
       </div>
