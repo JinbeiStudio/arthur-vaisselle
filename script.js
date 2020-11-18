@@ -244,3 +244,44 @@ function preload() {
     images[i].src = preload.arguments[i];
   }
 }
+
+function filtreListing() {
+  /*   let listingFiches = document.getElementById("listingFiches");
+  let ficheProduit = document.getElementsByClassName("ficheProduit");
+  let checkbox = document.querySelectorAll("input[type='checkbox']");
+
+  for (let x = 0; x < checkbox.length; x++) {
+    checkbox[x].addEventListener("change", (check) => {
+      if (check.target.checked) {
+        for (let i = 0; i < ficheProduit.length; i++) {
+          if (ficheProduit[i].classList.contains(checkbox[x].id)) {
+            ficheProduit[i].style.display = "block";
+            console.log(checkbox[x].id);
+          } else {
+            ficheProduit[i].style.display = "none";
+          }
+        }
+      } else {
+        for (let i = 0; i < ficheProduit.length; i++) {
+          if (ficheProduit[i].classList.contains(checkbox[x].id)) {
+            ficheProduit[i].style.display = "block";
+          }
+        }
+      }
+    });
+  } */
+  /*  var blancOld = [];
+  checkboxBlanc.addEventListener("change", (checkbox) => {
+    if (checkbox.target.checked) {
+      for (let i = 0; i < ficheProduit.length; i++) {
+        if (!ficheProduit[i].classList.contains("blanc")) {
+          blancOld[i] = listingFiches.removeChild(ficheProduit[i]);
+        }
+      }
+    } else {
+      blancOld.forEach(function (item) {
+        listingFiches.appendChild(item);
+      });
+    }
+  }); */
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listing - Arthur Vaisselle</title>
+    <title>Produit - Arthur Vaisselle</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="fonts/cinzel/stylesheet.css" />
     <link rel="stylesheet" href="fonts/raleway/stylesheet.css" />
@@ -11,7 +11,7 @@
     <script type="text/javascript" src="script.js"></script>
   </head>
 
-  <body id="bodyListing">
+  <body>
     <!-- ----------------------------------------------------------------------- -->
     <!--                           Barre pomotionnelle                           -->
     <!-- ----------------------------------------------------------------------- -->
@@ -464,585 +464,410 @@
       </nav>
     </header>
 
-    <main class="mainListing">
+    <main id="mainProduit">
       <div class="currentNav">
         <a href="index.html">Accueil</a>
         <p>></p>
         <a href="listing.html">Vaisselle</a>
         <p>></p>
         <a href="listing.html">Assiettes</a>
+        <p>></p>
+        <a href="listing.html">Assiette Plate</a>
+        <p>></p>
+        <a href="listing.html">Assiette Plate en grès</a>
       </div>
-      <section class="titleListing">
-        <img src="images/instagram1.jpg" alt="assiettes" title="assiettes" />
+      <section id="produitPictures">
+        <h4>COLLECTION ABYSSE</h4>
+        <h2>Assiette plate en grès</h2>
+        <img
+          src="images/instagram1.jpg"
+          width="700"
+          height="500"
+          alt="Assiette Plate en grès"
+          title="Assiette Plate en grès"
+        />
+        <div class="produitVignettes">
+          <img
+            width="150"
+            height="150"
+            src="images/instagram1.jpg"
+            alt="Assiette Plate en grès"
+            title="Assiette Plate en grès"
+          />
+          <img
+            width="150"
+            height="150"
+            src="images/instagram1.jpg"
+            alt="Assiette Plate en grès"
+            title="Assiette Plate en grès"
+          />
+          <img
+            width="150"
+            height="150"
+            src="images/instagram1.jpg"
+            alt="Assiette Plate en grès"
+            title="Assiette Plate en grès"
+          />
+          <img
+            width="150"
+            height="150"
+            src="images/instagram1.jpg"
+            alt="Assiette Plate en grès"
+            title="Assiette Plate en grès"
+          />
+        </div>
+      </section>
+      <section id="descriptifProduit">
         <article>
-          <h2 class="whiteTitle">LES ASSIETTES</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nulla
-            dicta quisquam nam, ad asperiores repudiandae ipsum ratione
-            obcaecati amet, nobis deleniti eaque sit labore incidunt, est
-            voluptate modi laboriosam.
-          </p>
+          <div class="produitSelectTaille">
+            <label for="taille">Taille</label>
+
+            <select name="taille" id="taille">
+              <option value="28">28cm</option>
+              <option value="29">29cm</option>
+              <option value="30">30cm</option>
+            </select>
+            <a href="#">Guide des tailles</a>
+          </div>
+          <div class="produitSelectCouleur">
+            <label>Couleur</label>
+            <div>
+              <div></div>
+              <div></div>
+            </div>
+            <p>Align</p>
+          </div>
+          <div>
+            <label for="quantiteProduit">Quantité</label>
+            <input
+              type="number"
+              id="quantiteProduit"
+              name="quantiteProduit"
+              min="50"
+              max="1000"
+              step="50"
+              value="50"
+            />
+            <p>Lot de 50</p>
+          </div>
+          <div class="priceProduct">
+            <div>
+              <p>300 €</p>
+              <p>6 € l'unité</p>
+            </div>
+            <div>
+              <p>250 €</p>
+              <p>5 € l'unité</p>
+            </div>
+          </div>
+          <div class="buttonsProduct">
+            <div>
+              <button>Ajouter au panier</button>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <p>Plus que 5 lots en stock</p>
+          </div>
+          <div></div>
+        </article>
+        <article>
+          <div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.919 17.377l-4.869-13.377h-2.05c-.266 0-.52-.105-.707-.293-.188-.187-.293-.442-.293-.707 0-.552.447-1 1-1h3.45l5.469 15.025c.841.101 1.59.5 2.139 1.088l11.258-4.097.684 1.879-11.049 4.021c.032.19.049.385.049.584 0 1.932-1.569 3.5-3.5 3.5-1.932 0-3.5-1.568-3.5-3.5 0-1.363.781-2.545 1.919-3.123zm1.581 1.811c.724 0 1.312.588 1.312 1.312 0 .724-.588 1.313-1.312 1.313-.725 0-1.313-.589-1.313-1.313s.588-1.312 1.313-1.312zm13.314-6.512l-11.418 4.156-2.736-7.518 11.418-4.156 2.736 7.518zm-8.71-3.215l-2.88 1.048 1.368 3.759 7.659-2.787-1.368-3.759-2.9 1.055.684 1.879-1.879.685-.684-1.88zm2.672-4.165l-8.458 3.078-1.927-5.296 8.457-3.078 1.928 5.296zm-3.123-2.733l-4.699 1.711.56 1.537 4.698-1.71-.559-1.538z"
+                />
+              </svg>
+              <p>Livraison offerte dès 300 euros</p>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5 22h-5v-12h5v12zm17.615-8.412c-.857-.115-.578-.734.031-.922.521-.16 1.354-.5 1.354-1.51 0-.672-.5-1.562-2.271-1.49-1.228.05-3.666-.198-4.979-.885.906-3.656.688-8.781-1.688-8.781-1.594 0-1.896 1.807-2.375 3.469-1.221 4.242-3.312 6.017-5.687 6.885v10.878c4.382.701 6.345 2.768 10.505 2.768 3.198 0 4.852-1.735 4.852-2.666 0-.335-.272-.573-.96-.626-.811-.062-.734-.812.031-.953 1.268-.234 1.826-.914 1.826-1.543 0-.529-.396-1.022-1.098-1.181-.837-.189-.664-.757.031-.812 1.133-.09 1.688-.764 1.688-1.41 0-.565-.424-1.109-1.26-1.221z"
+                />
+              </svg>
+              <p>Retours gratuits sous 30 jours</p>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19.5 11c-2.485 0-4.5 2.015-4.5 4.5s2.015 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.015-4.5-4.5-4.5zm-.469 6.484l-1.688-1.637.696-.697.991.94 2.116-2.169.696.696-2.811 2.867zm-15.031-2.484h5v1h-5v-1zm8-1h-8v-1h8v1zm1.502 4h-11.002c-.276 0-.5-.224-.5-.5v-6.5h12.82c1.184-1.23 2.842-2 4.68-2 .886 0 1.729.179 2.5.501v-3.501c0-1.104-.896-2-2-2h-18c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h12.82c-.553-.576-1.006-1.251-1.318-2zm-11.502-11.5c0-.276.224-.5.5-.5h17c.276 0 .5.224.5.5v1.5h-18v-1.5z"
+                />
+              </svg>
+              <p>Tous les paiements sont sécurisés</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4 24h-2v-24h2v24zm18-21.387s-1.621 1.43-3.754 1.43c-3.361 0-3.436-2.895-7.337-2.895-2.108 0-4.075.98-4.909 1.694v12.085c1.183-.819 2.979-1.681 4.922-1.681 3.685 0 4.201 2.754 7.485 2.754 2.121 0 3.593-1.359 3.593-1.359-1.742-1.253-3.071-2.954-3.778-4.932 1.464-1.278 3.508-4.962 3.778-7.096z"
+                  />
+                </svg>
+                <p>Une fabrication artisanale Française</p>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.787 7.531c-5.107 2.785-12.72 9.177-15.787 15.469h2.939c.819-2.021 2.522-4.536 3.851-5.902 8.386 3.747 17.21-2.775 17.21-11.343 0-1.535-.302-3.136-.92-4.755-2.347 3.119-5.647 1.052-10.851 1.625-7.657.844-11.162 6.797-8.764 11.54 3.506-3.415 9.523-6.38 12.322-6.634z"
+                  />
+                </svg>
+                <p>100% grès sourcé durablement</p>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+                  />
+                </svg>
+                <p>Une garantie de 5 ans</p>
+              </div>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                quidem adipisci nesciunt distinctio maxime. Quisquam, error
+                nostrum numquam quasi dolore molestias maiores asperiores veniam
+                debitis perferendis quaerat dolor! Ipsam, dolores.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                />
+              </svg>
+              <a href="">Facebook</a>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+              <a href="">Instagram</a>
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <a href="">Pinterest</a>
+            </div>
+          </div>
         </article>
       </section>
-      <section class="filterCollection">
-        <a class="selectedFilterCollection">Toutes</a>
-        <a>Abysse</a>
-        <a>Carat</a>
-        <a>Ecume</a>
-        <a>Nordic</a>
-        <a>Perle</a>
-        <a>Saint-Tropez</a>
+      <section id="listingProduits">
+        <h2>Complétez votre service</h2>
+        <div class="produitCompleter">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z" />
+          </svg>
+          <a href="produit.html">
+            <article>
+              <img
+                src="images/fourchette.jpg"
+                height="200"
+                width="200"
+                alt="fourchette"
+                title="fourchette"
+              />
+              <h5>Abysse</h5>
+              <h4>Fourchettes élégantes</h4>
+              <p class="italic smallerText">Inox, Lot de 50</p>
+              <p class="bold biggerText">200 €</p>
+            </article>
+          </a>
+          <a href="produit.html">
+            <article>
+              <img
+                src="images/cuillere.jpg"
+                height="200"
+                width="200"
+                alt="cuillere"
+                title="cuillere"
+              />
+              <h5>Abysse</h5>
+              <h4>Cuillères ebony</h4>
+              <p class="italic smallerText">Inox, Lot de 50</p>
+              <p class="bold biggerText">150 €</p>
+            </article>
+          </a>
+          <a href="produit.html">
+            <article>
+              <img
+                src="images/couteaux.jpg"
+                width="200"
+                height="200"
+                alt="couteaux"
+                title="couteau"
+              />
+              <h5>Abysse</h5>
+              <h4>Couteaux élégants</h4>
+              <p class="italic smallerText">Inox, Lot de 50</p>
+              <p class="bold biggerText">250 €</p>
+            </article>
+          </a>
+
+          <a href="produit.html">
+            <article>
+              <img
+                src="images/assiette.jpg"
+                alt="assiette"
+                title="assiette"
+                width="200"
+                height="200"
+              />
+              <h5>Abysse</h5>
+              <h4>Assiettes plates</h4>
+              <p class="italic smallerText">Céramique, Lot de 50</p>
+              <p class="bold biggerText">500 €</p>
+            </article>
+          </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z" />
+          </svg>
+        </div>
       </section>
-      <div class="listingProducts">
-        <section class="listingFilters">
-          <div>
-            <h4>Filtrer par</h4>
-            <article>
-              <h5>Type</h5>
-              <div>
-                <input type="checkbox" name="plate" id="plate" />
-                <label for="plate">Plates</label>
-              </div>
-              <div>
-                <input type="checkbox" name="creuse" id="creuse" />
-                <label for="creuse">Creuses</label>
-              </div>
-              <div>
-                <input type="checkbox" name="dessert" id="dessert" />
-                <label for="dessert">Dessert</label>
-              </div>
-            </article>
-            <article>
-              <h5>Matière</h5>
-              <div>
-                <input type="checkbox" name="ceramique" id="ceramique" />
-                <label for="ceramique">Céramique</label>
-              </div>
-              <div>
-                <input type="checkbox" name="gres" id="gres" />
-                <label for="gres">Grès</label>
-              </div>
-              <div>
-                <input type="checkbox" name="porcelaine" id="porcelaine" />
-                <label for="inox">Porcelaine</label>
-              </div>
-            </article>
-            <article>
-              <h5>Couleur</h5>
-              <div>
-                <input type="checkbox" name="blanc" id="blanc" />
-                <label for="bleu">Blanc</label>
-              </div>
-              <div>
-                <input type="checkbox" name="bleu" id="bleu" />
-                <label for="vert">Bleu</label>
-              </div>
-            </article>
-            <article>
-              <h5>Prix</h5>
-              <input type="range" name="prix" id="prix" min="1" max="1000" />
-            </article>
-          </div>
-        </section>
-        <section id="listingFiches">
-          <article class="ficheProduit abysse creuse blanc ceramique">
-            <img src="images/assiette3.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes creuses <br />
-              en céramique
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Abysse</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
+      <section class="chefTestimonies">
+        <h2>Témoignages de chefs professionnels</h2>
+        <div>
+          <article>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"
               />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
+            </svg>
+            <figure>
+              <blockquote>
+                Recusandae officia expedita doloribus mollitia veniam et nostrum
+                quam autem, quod repellendus doloremque, amet nesciunt vero,
+                numquam consequatur non sint ratione magni.
+              </blockquote>
+              <figcaption>Alain PASSARD, L'Arpgège</figcaption>
+            </figure>
           </article>
-          <article class="ficheProduit abysse plate bleu ceramique">
-            <img src="images/assiette.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes plates <br />
-              en céramique
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Abysse</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
+          <article>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"
               />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
+            </svg>
+            <figure>
+              <blockquote>
+                Excepturi, placeat a labore in vitae, dicta soluta earum vero
+                sit molestiae, odit illo nobis et reiciendis dolorem deleniti
+                sunt quas? Quos.
+              </blockquote>
+              <figcaption>Marc BRIAND, L'Anthocyane</figcaption>
+            </figure>
           </article>
-          <article class="ficheProduit abysse dessert ceramique blanc">
-            <img src="images/assiette2.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes à dessert <br />
-              en céramique
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Abysse</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
+          <article>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"
               />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
+            </svg>
+            <figure>
+              <blockquote>
+                Sed quo eligendi sunt cumque culpa molestias alias provident in
+                a. Magnam ratione, esse dolorem voluptatibus repudiandae
+                praesentium sapiente ullam nobis tempore.
+              </blockquote>
+              <figcaption>Mauro COLAGRECO, Mirazur</figcaption>
+            </figure>
           </article>
-          <article class="ficheProduit carat creuse porcelaine blanc">
-            <img src="images/instagram1.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes creuses <br />
-              en porcelaine
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Carat</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
-              />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
-          </article>
-          <article class="ficheProduit carat plate porcelaine blanc">
-            <img src="images/instagram2.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes plates <br />
-              en porcelaine
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Carat</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
-              />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
-          </article>
-          <article class="ficheProduit carat dessert porcelaine blanc">
-            <img src="images/instagram3.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes à dessert <br />
-              en porcelaine
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Carat</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
-              />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
-          </article>
-          <article class="ficheProduit ecume creuse gres bleu">
-            <img src="images/assiette.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes creuses <br />
-              en grès
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Ecume</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
-              />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
-          </article>
-          <article class="ficheProduit ecume dessert gres blanc">
-            <img src="images/assiette2.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes à dessert <br />
-              en grès
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Ecume</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
-              />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
-          </article>
-          <article class="ficheProduit ecume plate gres blanc">
-            <img src="images/assiette3.jpg" width="200" height="230" alt="" />
-            <h4>
-              Assiettes plates <br />
-              en grès
-            </h4>
-            <p>Lot de 50</p>
-            <h5>Collection Ecume</h5>
-            <div class="listingPrice">
-              <div>
-                <p>300 €</p>
-                <p>6€ l'unité</p>
-              </div>
-              <div>
-                <p>250 €</p>
-                <p>5€ l'unité</p>
-              </div>
-            </div>
-            <div class="listingButtons">
-              <input
-                value="50"
-                min="50"
-                step="50"
-                type="number"
-                name=""
-                id=""
-              />
-              <button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <p class="promoPercent">- 20%</p>
-            <a>
-              <svg
-                class="wishlistListing"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"
-                />
-              </svg>
-            </a>
-          </article>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
+
     <footer>
       <section class="pictoServices">
         <figure>
@@ -1329,7 +1154,5 @@
   </body>
   <script>
     subNav();
-    var oldChild = [];
-    filtreListing();
   </script>
 </html>
