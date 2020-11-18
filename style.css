@@ -629,18 +629,16 @@ footer a {
 
 #listingFiches {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   text-align: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 #listingFiches article {
   position: relative;
   margin: 0 50px 20px 50px;
-}
-
-#listingFiches article:nth-child(3n) {
-  break-after: always;
+  width: 180px;
 }
 
 #listingFiches img {
