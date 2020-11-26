@@ -104,7 +104,7 @@ function subNav() {
       servicesNav.style.display = "none";
       collectionsNav.style.display = "none";
       vaisselleNav.style.display = "flex";
-      document.getElementById("main").style.opacity = "30%";
+      document.querySelector("main").style.opacity = "30%";
     },
     false
   );
@@ -113,7 +113,7 @@ function subNav() {
     "mouseleave",
     function (event) {
       vaisselleNav.style.display = "none";
-      document.getElementById("main").style.opacity = "100%";
+      document.querySelector("main").style.opacity = "100%";
     },
     false
   );
@@ -130,7 +130,7 @@ function subNav() {
       servicesNav.style.display = "none";
       collectionsNav.style.display = "none";
       couvertsNav.style.display = "flex";
-      document.getElementById("main").style.opacity = "30%";
+      document.querySelector("main").style.opacity = "30%";
     },
     false
   );
@@ -139,7 +139,7 @@ function subNav() {
     "mouseleave",
     function (event) {
       couvertsNav.style.display = "none";
-      document.getElementById("main").style.opacity = "100%";
+      document.querySelector("main").style.opacity = "100%";
     },
     false
   );
@@ -156,7 +156,7 @@ function subNav() {
       servicesNav.style.display = "none";
       collectionsNav.style.display = "none";
       verresNav.style.display = "flex";
-      document.getElementById("main").style.opacity = "30%";
+      document.querySelector("main").style.opacity = "30%";
     },
     false
   );
@@ -165,7 +165,7 @@ function subNav() {
     "mouseleave",
     function (event) {
       verresNav.style.display = "none";
-      document.getElementById("main").style.opacity = "100%";
+      document.querySelector("main").style.opacity = "100%";
     },
     false
   );
@@ -182,7 +182,7 @@ function subNav() {
       verresNav.style.display = "none";
       collectionsNav.style.display = "none";
       servicesNav.style.display = "flex";
-      document.getElementById("main").style.opacity = "30%";
+      document.querySelector("main").style.opacity = "30%";
     },
     false
   );
@@ -191,7 +191,7 @@ function subNav() {
     "mouseleave",
     function (event) {
       servicesNav.style.display = "none";
-      document.getElementById("main").style.opacity = "100%";
+      document.querySelector("main").style.opacity = "100%";
     },
     false
   );
@@ -205,7 +205,7 @@ function subNav() {
       verresNav.style.display = "none";
       servicesNav.style.display = "none";
       collectionsNav.style.display = "flex";
-      document.getElementById("main").style.opacity = "30%";
+      document.querySelector("main").style.opacity = "30%";
     },
     false
   );
@@ -214,7 +214,7 @@ function subNav() {
     "mouseleave",
     function (event) {
       collectionsNav.style.display = "none";
-      document.getElementById("main").style.opacity = "100%";
+      document.querySelector("main").style.opacity = "100%";
     },
     false
   );
@@ -225,7 +225,7 @@ function subNav() {
     verresNav.style.display = "none";
     servicesNav.style.display = "none";
     collectionsNav.style.display = "none";
-    document.getElementById("main").style.opacity = "100%";
+    document.querySelector("main").style.opacity = "100%";
   });
 
   linkarthur.addEventListener("mouseover", function (event) {
@@ -234,7 +234,7 @@ function subNav() {
     verresNav.style.display = "none";
     servicesNav.style.display = "none";
     collectionsNav.style.display = "none";
-    document.getElementById("main").style.opacity = "100%";
+    document.querySelector("main").style.opacity = "100%";
   });
 }
 

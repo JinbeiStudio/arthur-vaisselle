@@ -8,6 +8,7 @@
   --copper: #b26e63;
   --sage: #d2cca1;
   --gold: #c8ad55;
+  --royalblue: #02194f;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -290,8 +291,13 @@ footer section:first-of-type {
 .footerNav {
   display: flex;
   justify-content: space-around;
-  padding: 50px 50px;
-  line-height: 2em;
+  padding: 50px 30px;
+  line-height: 2.5em;
+}
+
+.footerNav h5 {
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .footerBottom {
@@ -577,7 +583,7 @@ footer a {
 
 .titleListing img {
   min-width: 50%;
-  max-height: 450px;
+  max-height: 500px;
   object-fit: cover;
 }
 
@@ -608,8 +614,8 @@ footer a {
   justify-content: center;
   align-items: center;
   font-size: 1.3em;
-  height: 60px;
-  border-bottom: solid 2px var(--darkGrey);
+  height: 100px;
+  background-color: var(--lightGrey);
 }
 
 .filterCollection a {
@@ -642,12 +648,16 @@ footer a {
   text-align: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  line-height: 1.7em;
+}
+
+#listingFiches a:hover {
+  text-decoration: none;
 }
 
 #listingFiches article {
   position: relative;
-  margin: 0 50px 20px 50px;
-  width: 180px;
+  margin: 0 40px 20px 40px;
 }
 
 #listingFiches img {
@@ -675,6 +685,7 @@ footer a {
 .listingPrice div:first-of-type {
   text-decoration: line-through;
   color: var(--red);
+  font-size: 0.8em;
 }
 
 #listingFiches input,
@@ -691,6 +702,8 @@ footer a {
   transition: visibility 0s, opacity 0.5s ease-in-out;
   opacity: 0;
   fill: var(--teal);
+  color: var(--teal);
+  font-weight: bold;
 }
 
 #listingFiches button:hover {
@@ -700,7 +713,7 @@ footer a {
 
 #listingFiches article:hover input,
 #listingFiches article:hover button,
-#listingFiches article:hover > p,
+#listingFiches article:hover p,
 #listingFiches article:hover svg {
   visibility: visible;
   opacity: 1;
@@ -766,7 +779,7 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--darkGrey);
+  background-color: var(--royalblue);
   padding: 80px 0;
   color: white;
   margin: 0;
@@ -897,13 +910,14 @@ footer a {
 }
 
 #descriptifProduit article:last-of-type {
-  padding: 70px 50px;
+  padding: 70px 100px;
   background-color: var(--lightGrey);
   font-weight: medium;
 }
 
 #descriptifProduit article:last-of-type a {
   font-weight: bold;
+  color: var(--teal);
 }
 
 #descriptifProduit article:last-of-type > div {
@@ -968,13 +982,6 @@ footer a {
 #descriptifProduit
   article:last-of-type
   > div:nth-of-type(2)
-  > div:last-of-type {
-  text-align: center;
-}
-
-#descriptifProduit
-  article:last-of-type
-  > div:nth-of-type(2)
   > div:first-of-type
   p {
   margin-bottom: 20px;
@@ -990,7 +997,7 @@ footer a {
 }
 
 #mainProduit #listingProduits {
-  padding: 60px 0;
+  padding: 20px 0;
   fill: var(--teal);
 }
 
@@ -1072,4 +1079,58 @@ footer a {
 .chefTestimonies > div figcaption {
   font-family: "cinzelregular", Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+
+.faq {
+  padding: 120px 0;
+  border-bottom: solid 1px var(--darkGrey);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq img {
+  object-fit: cover;
+}
+
+.faq article:first-of-type svg {
+  fill: var(--teal);
+  rotate: -90deg;
+}
+
+.faq article:nth-of-type(2) svg,
+.faq article:nth-of-type(3) svg {
+  fill: var(--teal);
+  rotate: 90deg;
+}
+
+.faq h2 {
+  margin-bottom: 50px;
+}
+
+.faq h3 {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+.faq article {
+  padding: 30px 30px;
+  border: solid 1px var(--darkGrey);
+  margin: 10px 50px;
+  width: 80vw;
+}
+
+.faq article > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq article:first-of-type > div:last-of-type {
+  margin-top: 20px;
+}
+
+.faq article > div:last-of-type p {
+  padding: 0 50px;
 }
