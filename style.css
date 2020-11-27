@@ -21,7 +21,18 @@
 
 body {
   font-family: "raleway", Arial, Helvetica, sans-serif;
+}
+
+p,
+a {
   line-height: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+  font-family: "cinzelregular", Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 h2 {
@@ -65,6 +76,8 @@ footer {
 a {
   text-decoration: none;
   color: black;
+  text-decoration: solid transparent;
+  transition: text-decoration 1s ease;
 }
 
 a:hover {
@@ -82,14 +95,17 @@ button {
   background-color: var(--teal);
   border-color: transparent;
   color: white;
-  font-size: 1em;
+  font-size: 1.1em;
   text-transform: uppercase;
   padding: 10px 20px;
+  box-shadow: unset;
+  transition: all 0.5s ease-in;
 }
 
 button:hover {
   background-color: var(--darkGrey);
   cursor: pointer;
+  border-color: var(--darkGrey);
 }
 
 .italic {
@@ -566,6 +582,12 @@ footer a {
 
 .instagram img {
   margin: 0 20px 100px 0;
+}
+
+.instagram h4 {
+  margin-bottom: 30px;
+  color: var(--teal);
+  font-weight: bold;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1137,4 +1159,135 @@ footer a {
 
 .faq article > div:last-of-type p {
   padding: 0 50px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Page Inspiration                              */
+/* -------------------------------------------------------------------------- */
+
+.collectionPresentation {
+  padding: 100px 0 100px 200px;
+  display: flex;
+}
+
+.collectionPresentation article:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.collectionPresentation h2,
+.collectionPresentation p {
+  margin-bottom: 30px;
+}
+
+.fondAssiette {
+  background-image: url(images/fond-assiette.png);
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.fondAssiette img:first-of-type {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 105px;
+  left: 95px;
+}
+
+.fondAssiette img:nth-of-type(2),
+.fondAssiette img:nth-of-type(3),
+.fondAssiette img:nth-of-type(4),
+.fondAssiette img:nth-of-type(5) {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+}
+
+.fondAssiette img:nth-of-type(2) {
+  top: 0;
+  left: -80px;
+}
+
+.fondAssiette img:nth-of-type(3) {
+  top: 130px;
+  left: -130px;
+}
+
+.fondAssiette img:nth-of-type(4) {
+  top: 270px;
+  left: -130px;
+}
+
+.fondAssiette img:nth-of-type(5) {
+  top: 400px;
+  left: -70px;
+}
+
+.bannerInspiration {
+  background-image: url("images/abysse1.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.bannerInspiration h2 {
+  color: white;
+}
+
+.collectionVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 50px 100px 50px;
+}
+
+.collectionVideo article:first-of-type {
+  background-image: url(images/fond-assiette-video.png);
+  background-size: cover;
+  width: 900px;
+  height: 650px;
+  position: relative;
+}
+
+.collectionVideo article:first-of-type div {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  left: 265px;
+  top: 130px;
+}
+
+.collectionVideo video {
+  width: 750px;
+  height: 750px;
+}
+
+.collectionVideo h2,
+.collectionVideo p {
+  margin-bottom: 30px;
+}
+
+.collectionVideo p {
+  width: 450px;
+  text-align: center;
 }
