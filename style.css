@@ -47,7 +47,7 @@ h2:after {
   display: block;
   margin: 0 auto;
   width: 250px;
-  padding-top: 20px;
+  padding-top: 15px;
   border-bottom: 1px solid var(--teal);
 }
 
@@ -1290,4 +1290,136 @@ footer a {
 .collectionVideo p {
   width: 450px;
   text-align: center;
+}
+
+.recette {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.openBook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-image: url(images/open-book.png);
+  flex-basis: 70vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.openBook article {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  margin: 0 100px 0 80px;
+}
+
+.openBook article > div > div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.openBook img {
+  border-radius: 50%;
+}
+
+.openBook article:nth-of-type(2) img {
+  order: 2;
+}
+
+.openBook p {
+  padding: 0 20px;
+}
+
+.openBook article > div > p {
+  font-size: 1.5em;
+  color: var(--teal);
+  font-weight: bold;
+}
+
+.openBook article:nth-of-type(2) > div > p {
+  text-align: right;
+}
+
+.recette svg:nth-of-type(2) {
+  rotate: 180deg;
+}
+
+.recette svg {
+  margin: 30px 0;
+  fill: var(--darkGrey);
+}
+
+.recette h4 {
+  font-size: 2em;
+  color: var(--teal);
+  margin-top: 15px;
+}
+
+.recette {
+  margin: 80px 0;
+}
+
+.vaisselleFavorite {
+  padding: 50px 100px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.vaisselleFavorite h2 {
+  margin-bottom: 50px;
+}
+
+.vaisselleFavorite > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vaisselleFavorite article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.vaisselleFavorite img {
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  left: 47px;
+  top: 52px;
+}
+
+.vaisselleFavorite article:nth-of-type(2) > div {
+  order: 4;
+}
+
+.vaisselleFavorite h4,
+.vaisselleFavorite h5 {
+  margin-bottom: 15px;
+}
+
+.vaisselleFavorite article > div {
+  background-image: url(images/fond-assiette.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.vaisselleFavorite button {
+  font-size: 0.9em;
+}
+
+.vaisselleFavorite article:nth-of-type(2) button {
+  margin-bottom: 10px;
 }
