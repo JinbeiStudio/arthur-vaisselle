@@ -1347,6 +1347,7 @@ footer a {
 
 .recette svg:nth-of-type(2) {
   rotate: 180deg;
+  stroke-width: 22;
 }
 
 .recette svg {
