@@ -539,10 +539,49 @@
               </div>
             </article>
             <article>
-              <h5>Prix</h5>
-              <input type="range" name="prix" id="prix" min="1" max="1000" />
+              <h5>Prix Max</h5>
+              <input
+                oninput="this.nextElementSibling.value = this.value+' euros'"
+                type="range"
+                name="prix"
+                id="prix"
+                min="1"
+                max="1000"
+              />
+              <output></output>
             </article>
           </div>
+        </section>
+        <section class="listingFiltersMobile">
+          <select required name="matiereMobile" id="matiereMobile">
+            <option value="">Matière</option>
+            <option value="ceramique">Céramique</option>
+            <option value="gres">Grès</option>
+            <option value="porcelaine">Porcelaine</option>
+          </select>
+          <select required name="couleurMobile" id="couleurMobile">
+            <option value="">Couleur</option>
+            <option value="blanc">Blanc</option>
+            <option value="bleu">Bleu</option>
+          </select>
+          <select required name="typeMobile" id="typeMobile">
+            <option value="">Type</option>
+            <option value="plates">Plates</option>
+            <option value="creuses">Creuses</option>
+            <option value="dessert">Dessert</option>
+          </select>
+          <article>
+            <p>Prix max :</p>
+            <input
+              oninput="this.nextElementSibling.value = this.value+' euros'"
+              type="range"
+              name="prix"
+              id="prix"
+              min="1"
+              max="1000"
+            />
+            <output></output>
+          </article>
         </section>
         <section id="listingFiches">
           <article class="ficheProduit abysse creuse blanc ceramique">
