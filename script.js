@@ -134,10 +134,14 @@ function filtreCollection() {
 }
 /* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/*                               Filtre listing                               */
+/* -------------------------------------------------------------------------- */
 function filtreCheckbox() {
   let ficheProduit = document.getElementsByClassName("ficheProduit");
   let checkbox = document.getElementsByClassName("checkbox");
   let annuler = document.querySelector(".annulerFiltre");
+  let output = document.querySelector("output");
 
   for (let i = 0; i < checkbox.length; i++) {
     checkbox[i].addEventListener("click", function () {
@@ -163,9 +167,11 @@ function filtreCheckbox() {
 
     for (let i = 0; i < checkbox.length; i++) {
       checkbox[i].checked = false;
+      output.textContent = "";
     }
   });
 }
+/* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
 /*                        Faire apparaître le sous menu                       */
@@ -340,44 +346,3 @@ function preload() {
   }
 }
 /* -------------------------------------------------------------------------- */
-
-function filtreListing() {
-  /*   let listingFiches = document.getElementById("listingFiches");
-  let ficheProduit = document.getElementsByClassName("ficheProduit");
-  let checkbox = document.querySelectorAll("input[type='checkbox']");
-
-  for (let x = 0; x < checkbox.length; x++) {
-    checkbox[x].addEventListener("change", (check) => {
-      if (check.target.checked) {
-        for (let i = 0; i < ficheProduit.length; i++) {
-          if (ficheProduit[i].classList.contains(checkbox[x].id)) {
-            ficheProduit[i].style.display = "block";
-            console.log(checkbox[x].id);
-          } else {
-            ficheProduit[i].style.display = "none";
-          }
-        }
-      } else {
-        for (let i = 0; i < ficheProduit.length; i++) {
-          if (ficheProduit[i].classList.contains(checkbox[x].id)) {
-            ficheProduit[i].style.display = "block";
-          }
-        }
-      }
-    });
-  } */
-  /*  var blancOld = [];
-  checkboxBlanc.addEventListener("change", (checkbox) => {
-    if (checkbox.target.checked) {
-      for (let i = 0; i < ficheProduit.length; i++) {
-        if (!ficheProduit[i].classList.contains("blanc")) {
-          blancOld[i] = listingFiches.removeChild(ficheProduit[i]);
-        }
-      }
-    } else {
-      blancOld.forEach(function (item) {
-        listingFiches.appendChild(item);
-      });
-    }
-  }); */
-}
