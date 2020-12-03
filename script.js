@@ -245,6 +245,22 @@ function preload() {
   }
 }
 
+function faq() {
+  let faq = document.getElementsByClassName("faqArticle");
+
+  for (let i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+      if (faq[i].classList.contains("openFaq")) {
+        faq[i].classList.remove("openFaq");
+        faq[i].classList.add("closedFaq");
+      } else if (faq[i].classList.contains("closedFaq")) {
+        faq[i].classList.add("openFaq");
+        faq[i].classList.remove("closedFaq");
+      }
+    });
+  }
+}
+
 function filtreListing() {
   /*   let listingFiches = document.getElementById("listingFiches");
   let ficheProduit = document.getElementsByClassName("ficheProduit");

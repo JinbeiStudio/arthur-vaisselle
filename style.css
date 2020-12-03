@@ -1409,15 +1409,27 @@ output {
   object-fit: cover;
 }
 
-.faq article:first-of-type svg {
+.openFaq svg {
   fill: var(--teal);
   -webkit-transform: rotate(-90deg);
 }
 
-.faq article:nth-of-type(2) svg,
-.faq article:nth-of-type(3) svg {
+.closedFaq svg {
   fill: var(--teal);
   -webkit-transform: rotate(90deg);
+}
+
+.closedFaq .faqText {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0ms 800ms, opacity 800ms 0ms;
+}
+
+.openFaq .faqText {
+  height: auto;
+  opacity: 1;
+  transition: height 0ms 0ms, opacity 600ms 0ms;
 }
 
 .faq h2 {
@@ -1443,7 +1455,7 @@ output {
   align-items: center;
 }
 
-.faq article:first-of-type > div:last-of-type {
+.faq article > div:last-of-type {
   margin-top: 20px;
 }
 
