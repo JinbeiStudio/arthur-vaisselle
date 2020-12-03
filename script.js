@@ -24,6 +24,7 @@ function listingProduits() {
     );
   }
 }
+/* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
 /*                            Choix des collections                           */
@@ -74,6 +75,96 @@ function choixCollection() {
       }
     });
   }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                Affichage FAQ                               */
+/* -------------------------------------------------------------------------- */
+function faq() {
+  let faq = document.getElementsByClassName("faqArticle");
+
+  for (let i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+      if (faq[i].classList.contains("openFaq")) {
+        faq[i].classList.remove("openFaq");
+        faq[i].classList.add("closedFaq");
+      } else if (faq[i].classList.contains("closedFaq")) {
+        faq[i].classList.add("openFaq");
+        faq[i].classList.remove("closedFaq");
+      }
+    });
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                          Filtre collection listing                         */
+/* -------------------------------------------------------------------------- */
+function filtreCollection() {
+  let filtre = document.getElementsByClassName("linkFilterCollection");
+  let ficheProduit = document.getElementsByClassName("ficheProduit");
+
+  for (let i = 0; i < filtre.length; i++) {
+    filtre[i].addEventListener("click", function () {
+      //console.log(filtre[i]);
+      for (let i = 0; i < filtre.length; i++) {
+        filtre[i].classList.remove("selectedFilterCollection");
+      }
+
+      for (let e = 0; e < ficheProduit.length; e++) {
+        if (
+          !ficheProduit[e].classList.contains(
+            filtre[i].textContent.toLowerCase()
+          )
+        ) {
+          //console.log(filtre[i].textContent.toLowerCase());
+          ficheProduit[e].classList.add("hideFicheProduit");
+        } else {
+          ficheProduit[e].classList.remove("hideFicheProduit");
+        }
+
+        if (filtre[i].classList.contains("allCollection")) {
+          ficheProduit[e].classList.remove("hideFicheProduit");
+        }
+      }
+      filtre[i].classList.toggle("selectedFilterCollection");
+    });
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+function filtreCheckbox() {
+  let ficheProduit = document.getElementsByClassName("ficheProduit");
+  let checkbox = document.getElementsByClassName("checkbox");
+  let annuler = document.querySelector(".annulerFiltre");
+
+  for (let i = 0; i < checkbox.length; i++) {
+    checkbox[i].addEventListener("click", function () {
+      for (let x = 0; x < checkbox.length; x++) {
+        if (checkbox[x].checked) {
+          for (let e = 0; e < ficheProduit.length; e++) {
+            if (!ficheProduit[e].classList.contains(checkbox[x].id)) {
+              ficheProduit[e].classList.add("hideFicheProduitCheckbox");
+            } else {
+              ficheProduit[e].classList.remove("hideFicheProduitCheckbox");
+            }
+          }
+        } else {
+        }
+      }
+    });
+  }
+
+  annuler.addEventListener("click", function () {
+    for (let e = 0; e < ficheProduit.length; e++) {
+      ficheProduit[e].classList.remove("hideFicheProduitCheckbox");
+    }
+
+    for (let i = 0; i < checkbox.length; i++) {
+      checkbox[i].checked = false;
+    }
+  });
 }
 
 /* -------------------------------------------------------------------------- */
@@ -237,29 +328,18 @@ function subNav() {
     document.querySelector("main").style.opacity = "100%";
   });
 }
+/* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/*                   Chargement des images collections cache                  */
+/* -------------------------------------------------------------------------- */
 function preload() {
   for (i = 0; i < preload.arguments.length; i++) {
     images[i] = new Image();
     images[i].src = preload.arguments[i];
   }
 }
-
-function faq() {
-  let faq = document.getElementsByClassName("faqArticle");
-
-  for (let i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function () {
-      if (faq[i].classList.contains("openFaq")) {
-        faq[i].classList.remove("openFaq");
-        faq[i].classList.add("closedFaq");
-      } else if (faq[i].classList.contains("closedFaq")) {
-        faq[i].classList.add("openFaq");
-        faq[i].classList.remove("closedFaq");
-      }
-    });
-  }
-}
+/* -------------------------------------------------------------------------- */
 
 function filtreListing() {
   /*   let listingFiches = document.getElementById("listingFiches");

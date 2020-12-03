@@ -485,13 +485,15 @@
         </article>
       </section>
       <section class="filterCollection">
-        <a class="selectedFilterCollection">Toutes</a>
-        <a>Abysse</a>
-        <a>Carat</a>
-        <a>Ecume</a>
-        <a>Nordic</a>
-        <a>Perle</a>
-        <a>Saint-Tropez</a>
+        <a class="allCollection linkFilterCollection selectedFilterCollection"
+          >Toutes</a
+        >
+        <a class="linkFilterCollection">Abysse</a>
+        <a class="linkFilterCollection">Carat</a>
+        <a class="linkFilterCollection">Ecume</a>
+        <a class="linkFilterCollection">Nordic</a>
+        <a class="linkFilterCollection">Perle</a>
+        <a class="linkFilterCollection">Saint-Tropez</a>
       </section>
       <div class="listingProducts">
         <section class="listingFilters">
@@ -500,17 +502,22 @@
             <article>
               <h5>Type</h5>
               <label for="plate" class="b-contain">
-                <input name="plate" id="plate" type="checkbox" />
+                <input class="checkbox" name="radio" id="plate" type="radio" />
                 <div class="b-input"></div>
                 <span>Plates</span>
               </label>
               <label for="creuse" class="b-contain">
-                <input name="creuse" id="creuse" type="checkbox" />
+                <input class="checkbox" name="radio" id="creuse" type="radio" />
                 <div class="b-input"></div>
                 <span>Creuses</span>
               </label>
               <label for="dessert" class="b-contain">
-                <input name="dessert" id="dessert" type="checkbox" />
+                <input
+                  class="checkbox"
+                  name="radio"
+                  id="dessert"
+                  type="radio"
+                />
                 <div class="b-input"></div>
                 <span>Dessert</span>
               </label>
@@ -518,17 +525,27 @@
             <article>
               <h5>Matière</h5>
               <label for="ceramique" class="b-contain">
-                <input name="ceramique" id="ceramique" type="checkbox" />
+                <input
+                  class="checkbox"
+                  name="radio"
+                  id="ceramique"
+                  type="radio"
+                />
                 <div class="b-input"></div>
                 <span>Céramique</span>
               </label>
               <label for="gres" class="b-contain">
-                <input name="gres" id="gres" type="checkbox" />
+                <input class="checkbox" name="radio" id="gres" type="radio" />
                 <div class="b-input"></div>
                 <span>Grès</span>
               </label>
               <label for="porcelaine" class="b-contain">
-                <input name="porcelaine" id="porcelaine" type="checkbox" />
+                <input
+                  class="checkbox"
+                  name="radio"
+                  id="porcelaine"
+                  type="radio"
+                />
                 <div class="b-input"></div>
                 <span>Porcelaine</span>
               </label>
@@ -536,12 +553,12 @@
             <article>
               <h5>Couleur</h5>
               <label for="blanc" class="b-contain">
-                <input name="blanc" id="blanc" type="checkbox" />
+                <input class="radio" name="radio" id="blanc" type="radio" />
                 <div class="b-input"></div>
                 <span>Blanc</span>
               </label>
               <label for="bleu" class="b-contain">
-                <input name="bleu" id="bleu" type="checkbox" />
+                <input class="checkbox" name="radio" id="bleu" type="radio" />
                 <div class="b-input"></div>
                 <span>Bleu</span>
               </label>
@@ -558,6 +575,7 @@
               />
               <output></output>
             </article>
+            <a class="annulerFiltre"> X Annuler Filtre</a>
           </div>
         </section>
         <section class="listingFiltersMobile">
@@ -1596,5 +1614,7 @@
   </body>
   <script>
     subNav();
+    filtreCollection();
+    filtreCheckbox();
   </script>
 </html>

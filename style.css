@@ -76,9 +76,8 @@ footer {
 }
 
 a {
-  text-decoration: none;
   color: black;
-  text-decoration: solid transparent;
+  text-decoration-color: transparent;
   transition: text-decoration 1s ease;
 }
 
@@ -877,11 +876,15 @@ footer a {
 
 #listingFiches {
   display: flex;
-  justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  margin: 0 auto;
   line-height: 1.7em;
+  margin-left: 20px;
+}
+
+.annulerFiltre {
+  padding-top: 10px;
+  color: var(--red);
 }
 
 #listingFiches a:hover {
@@ -1016,6 +1019,14 @@ output {
   text-align: center;
   display: block;
   margin-top: 5px;
+}
+
+.hideFicheProduit {
+  display: none;
+}
+
+.hideFicheProduitCheckbox {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
