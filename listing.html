@@ -499,44 +499,52 @@
             <h4>Filtrer par</h4>
             <article>
               <h5>Type</h5>
-              <div>
-                <input type="checkbox" name="plate" id="plate" />
-                <label for="plate">Plates</label>
-              </div>
-              <div>
-                <input type="checkbox" name="creuse" id="creuse" />
-                <label for="creuse">Creuses</label>
-              </div>
-              <div>
-                <input type="checkbox" name="dessert" id="dessert" />
-                <label for="dessert">Dessert</label>
-              </div>
+              <label for="plate" class="b-contain">
+                <input name="plate" id="plate" type="checkbox" />
+                <div class="b-input"></div>
+                <span>Plates</span>
+              </label>
+              <label for="creuse" class="b-contain">
+                <input name="creuse" id="creuse" type="checkbox" />
+                <div class="b-input"></div>
+                <span>Creuses</span>
+              </label>
+              <label for="dessert" class="b-contain">
+                <input name="dessert" id="dessert" type="checkbox" />
+                <div class="b-input"></div>
+                <span>Dessert</span>
+              </label>
             </article>
             <article>
               <h5>Matière</h5>
-              <div>
-                <input type="checkbox" name="ceramique" id="ceramique" />
-                <label for="ceramique">Céramique</label>
-              </div>
-              <div>
-                <input type="checkbox" name="gres" id="gres" />
-                <label for="gres">Grès</label>
-              </div>
-              <div>
-                <input type="checkbox" name="porcelaine" id="porcelaine" />
-                <label for="inox">Porcelaine</label>
-              </div>
+              <label for="ceramique" class="b-contain">
+                <input name="ceramique" id="ceramique" type="checkbox" />
+                <div class="b-input"></div>
+                <span>Céramique</span>
+              </label>
+              <label for="gres" class="b-contain">
+                <input name="gres" id="gres" type="checkbox" />
+                <div class="b-input"></div>
+                <span>Grès</span>
+              </label>
+              <label for="porcelaine" class="b-contain">
+                <input name="porcelaine" id="porcelaine" type="checkbox" />
+                <div class="b-input"></div>
+                <span>Porcelaine</span>
+              </label>
             </article>
             <article>
               <h5>Couleur</h5>
-              <div>
-                <input type="checkbox" name="blanc" id="blanc" />
-                <label for="bleu">Blanc</label>
-              </div>
-              <div>
-                <input type="checkbox" name="bleu" id="bleu" />
-                <label for="vert">Bleu</label>
-              </div>
+              <label for="blanc" class="b-contain">
+                <input name="blanc" id="blanc" type="checkbox" />
+                <div class="b-input"></div>
+                <span>Blanc</span>
+              </label>
+              <label for="bleu" class="b-contain">
+                <input name="bleu" id="bleu" type="checkbox" />
+                <div class="b-input"></div>
+                <span>Bleu</span>
+              </label>
             </article>
             <article>
               <h5>Prix Max</h5>
@@ -553,23 +561,34 @@
           </div>
         </section>
         <section class="listingFiltersMobile">
-          <select required name="matiereMobile" id="matiereMobile">
-            <option value="">Matière</option>
-            <option value="ceramique">Céramique</option>
-            <option value="gres">Grès</option>
-            <option value="porcelaine">Porcelaine</option>
-          </select>
-          <select required name="couleurMobile" id="couleurMobile">
-            <option value="">Couleur</option>
-            <option value="blanc">Blanc</option>
-            <option value="bleu">Bleu</option>
-          </select>
-          <select required name="typeMobile" id="typeMobile">
-            <option value="">Type</option>
-            <option value="plates">Plates</option>
-            <option value="creuses">Creuses</option>
-            <option value="dessert">Dessert</option>
-          </select>
+          <div class="select">
+            <select required name="matiereMobile" id="matiereMobile">
+              <option value="">Matière</option>
+              <option value="ceramique">Céramique</option>
+              <option value="gres">Grès</option>
+              <option value="porcelaine">Porcelaine</option>
+            </select>
+            <div class="select_arrow"></div>
+          </div>
+
+          <div class="select">
+            <select required name="couleurMobile" id="couleurMobile">
+              <option value="">Couleur</option>
+              <option value="blanc">Blanc</option>
+              <option value="bleu">Bleu</option>
+            </select>
+            <div class="select_arrow"></div>
+          </div>
+
+          <div class="select">
+            <select required name="typeMobile" id="typeMobile">
+              <option value="">Type</option>
+              <option value="plates">Plates</option>
+              <option value="creuses">Creuses</option>
+              <option value="dessert">Dessert</option>
+            </select>
+            <div class="select_arrow"></div>
+          </div>
           <article>
             <p>Prix max :</p>
             <input
