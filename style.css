@@ -1067,6 +1067,11 @@ output {
   .listingFilters > div {
     display: none;
   }
+
+  #listingFiches {
+    justify-content: center;
+  }
+
   #listingFiches article {
     margin: 0 20px 20px 20px;
   }
@@ -1096,7 +1101,14 @@ output {
 
   .listingFiltersMobile article output {
     margin-left: 20px;
-    margin-top: 0px;
+    margin-top: 20px;
+  }
+
+  .annulerFiltreMobile {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: var(--red);
   }
 }
 

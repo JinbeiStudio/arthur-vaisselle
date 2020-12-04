@@ -183,7 +183,7 @@ function rangeListing() {
 
   for (let i = 0; i < range.length; i++) {
     range[i].addEventListener("change", function () {
-      console.log(range[i].value);
+      //console.log(range[i].value);
       for (let e = 0; e < ficheProduit.length; e++) {
         if (range[i].value <= parseInt(ficheProduit[e].dataset.prix)) {
           //console.log(ficheProduit[e].dataset.prix);
@@ -196,6 +196,48 @@ function rangeListing() {
   }
 }
 /* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                            Filtre select mobile                            */
+/* -------------------------------------------------------------------------- */
+function filtreSelectMobile() {
+  let select = document.getElementsByClassName("selectListing");
+  let ficheProduit = document.getElementsByClassName("ficheProduit");
+  let annuler = document.querySelector(".annulerFiltreMobile");
+  let output = document.querySelectorAll("output");
+
+  for (let i = 0; i < select.length; i++) {
+    select[i].addEventListener("change", function () {
+      for (let z = 0; z < select.length; z++) {
+        if (select[z].value != select[i].value) select[z].value = "all";
+      }
+
+      for (let e = 0; e < ficheProduit.length; e++) {
+        if (!ficheProduit[e].classList.contains(this.value)) {
+          ficheProduit[e].classList.add("hideFicheProduitCheckbox");
+        } else {
+          ficheProduit[e].classList.remove("hideFicheProduitCheckbox");
+        }
+      }
+    });
+  }
+
+  annuler.addEventListener("click", function () {
+    for (let e = 0; e < ficheProduit.length; e++) {
+      ficheProduit[e].classList.remove("hideFicheProduitCheckbox");
+      ficheProduit[e].classList.remove("hideFicheProduitRange");
+    }
+
+    for (let i = 0; i < select.length; i++) {
+      for (let x = 0; x < output.length; x++) {
+        output[x].textContent = " ";
+      }
+      for (let z = 0; z < select.length; z++) {
+        select[z].value = "all";
+      }
+    }
+  });
+}
 
 /* -------------------------------------------------------------------------- */
 /*                        Faire apparaître le sous menu                       */

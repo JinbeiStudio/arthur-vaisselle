@@ -581,8 +581,12 @@
         </section>
         <section class="listingFiltersMobile">
           <div class="select">
-            <select required name="matiereMobile" id="matiereMobile">
-              <option value="">Matière</option>
+            <select
+              class="selectListing"
+              name="matiereMobile"
+              id="matiereMobile"
+            >
+              <option disabled selected value="all">Matière</option>
               <option value="ceramique">Céramique</option>
               <option value="gres">Grès</option>
               <option value="porcelaine">Porcelaine</option>
@@ -591,8 +595,12 @@
           </div>
 
           <div class="select">
-            <select required name="couleurMobile" id="couleurMobile">
-              <option value="">Couleur</option>
+            <select
+              class="selectListing"
+              name="couleurMobile"
+              id="couleurMobile"
+            >
+              <option disabled selected value="all">Couleur</option>
               <option value="blanc">Blanc</option>
               <option value="bleu">Bleu</option>
             </select>
@@ -600,10 +608,10 @@
           </div>
 
           <div class="select">
-            <select required name="typeMobile" id="typeMobile">
-              <option value="">Type</option>
-              <option value="plates">Plates</option>
-              <option value="creuses">Creuses</option>
+            <select class="selectListing" name="typeMobile" id="typeMobile">
+              <option disabled selected value="all">Type</option>
+              <option value="plate">Plates</option>
+              <option value="creuse">Creuses</option>
               <option value="dessert">Dessert</option>
             </select>
             <div class="select_arrow"></div>
@@ -621,6 +629,7 @@
             />
             <output></output>
           </article>
+          <a class="annulerFiltreMobile"> X Annuler Filtre</a>
         </section>
         <section id="listingFiches">
           <article
@@ -1650,5 +1659,6 @@
     filtreCollection();
     filtreCheckbox();
     rangeListing();
+    filtreSelectMobile();
   </script>
 </html>
