@@ -1029,6 +1029,10 @@ output {
   display: none;
 }
 
+.hideFicheProduitRange {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .titleListing {
     flex-direction: column;

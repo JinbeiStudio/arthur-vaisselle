@@ -163,6 +163,7 @@ function filtreCheckbox() {
   annuler.addEventListener("click", function () {
     for (let e = 0; e < ficheProduit.length; e++) {
       ficheProduit[e].classList.remove("hideFicheProduitCheckbox");
+      ficheProduit[e].classList.remove("hideFicheProduitRange");
     }
 
     for (let i = 0; i < checkbox.length; i++) {
@@ -170,6 +171,29 @@ function filtreCheckbox() {
       output.textContent = "";
     }
   });
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                            Filtre range listing                            */
+/* -------------------------------------------------------------------------- */
+function rangeListing() {
+  let range = document.getElementsByClassName("rangeListing");
+  let ficheProduit = document.getElementsByClassName("ficheProduit");
+
+  for (let i = 0; i < range.length; i++) {
+    range[i].addEventListener("change", function () {
+      console.log(range[i].value);
+      for (let e = 0; e < ficheProduit.length; e++) {
+        if (range[i].value <= parseInt(ficheProduit[e].dataset.prix)) {
+          //console.log(ficheProduit[e].dataset.prix);
+          ficheProduit[e].classList.add("hideFicheProduitRange");
+        } else {
+          ficheProduit[e].classList.remove("hideFicheProduitRange");
+        }
+      }
+    });
+  }
 }
 /* -------------------------------------------------------------------------- */
 
