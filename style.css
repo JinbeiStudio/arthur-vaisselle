@@ -536,11 +536,14 @@ footer a {
   font-family: "cinzelregular", Arial, Helvetica, sans-serif;
 }
 
+#liensCollections li a {
+  transition: padding 0.5s ease-in-out;
+}
+
 .selectedCollection {
   color: white;
   background-color: var(--teal);
   padding: 7px;
-  transition: padding 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 1050px) {
