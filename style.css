@@ -78,7 +78,6 @@ footer {
 a {
   color: black;
   text-decoration-color: transparent;
-  transition: text-decoration 1s ease;
 }
 
 a:hover {
@@ -86,6 +85,11 @@ a:hover {
   text-underline-offset: 5px;
   text-decoration-color: var(--teal);
   cursor: pointer;
+  transition: text-decoration 0.5s ease-in;
+}
+
+svg {
+  transition: all 0.3s ease-in-out;
 }
 
 .imgLink {
@@ -329,9 +333,13 @@ footer section:first-of-type {
 .footerNav {
   display: flex;
   justify-content: space-around;
-  padding: 50px 30px;
+  padding: 70px 30px;
   line-height: 2.5em;
   flex-wrap: wrap;
+}
+
+.footerNav a {
+  line-height: 2em;
 }
 
 .footerNav h5 {
@@ -532,6 +540,7 @@ footer a {
   color: white;
   background-color: var(--teal);
   padding: 7px;
+  transition: padding 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 1050px) {
@@ -950,6 +959,10 @@ footer a {
   fill: white;
 }
 
+#listingFiches button {
+  transition: background-color 0.3s ease-in-out;
+}
+
 #listingFiches article:hover input,
 #listingFiches article:hover button,
 #listingFiches article:hover p,
@@ -972,6 +985,7 @@ footer a {
   color: white;
   background-color: var(--teal);
   padding: 10px;
+  transition: padding 0.5s ease-in-out;
 }
 
 /* .selectedFilterCollection::after {
