@@ -1658,7 +1658,7 @@ output {
     margin: 20px 30px;
   }
 
-  .faq article:first-of-type > div:last-of-type {
+  .faq article > div:last-of-type {
     flex-direction: column;
   }
 
