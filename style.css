@@ -1699,6 +1699,10 @@ output {
 /*                              Page Inspiration                              */
 /* -------------------------------------------------------------------------- */
 
+.bannerInspiration h1 {
+  text-align: center;
+  padding: 20px;
+}
 .collectionPresentation {
   padding: 100px 0 100px 200px;
   display: flex;
@@ -1833,6 +1837,10 @@ output {
   align-items: center;
 }
 
+.recette h4 {
+  text-align: center;
+}
+
 .openBook {
   display: flex;
   justify-content: center;
@@ -1957,6 +1965,246 @@ output {
 
 .vaisselleFavorite article:nth-of-type(2) button {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .collectionPresentation {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 50px 20px;
+  }
+
+  .fondAssiette img:nth-of-type(2) {
+    bottom: -50px;
+    left: -50px;
+    top: unset;
+  }
+
+  .fondAssiette img:nth-of-type(3) {
+    bottom: -125px;
+    left: 100px;
+    top: unset;
+  }
+
+  .fondAssiette img:nth-of-type(4) {
+    bottom: -125px;
+    left: 250px;
+    top: unset;
+  }
+
+  .fondAssiette img:nth-of-type(5) {
+    bottom: -50px;
+    left: 400px;
+    top: unset;
+  }
+
+  .collectionPresentation article:last-of-type {
+    margin-top: 150px;
+  }
+
+  .collectionPresentation article:last-of-type p {
+    max-width: 800px;
+  }
+
+  .vaisselleFavorite > div {
+    flex-direction: column;
+  }
+
+  .vaisselleFavorite > div article {
+    margin: 20px 0;
+  }
+
+  .vaisselleFavorite article:nth-of-type(2) > div {
+    order: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fondAssiette {
+    width: 300px;
+    height: 300px;
+  }
+
+  .fondAssiette img:first-of-type {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 62px;
+    left: 57px;
+  }
+
+  .fondAssiette img:nth-of-type(2) {
+    bottom: -60px;
+    left: -20px;
+    top: unset;
+  }
+
+  .fondAssiette img:nth-of-type(3) {
+    bottom: -125px;
+    left: 60px;
+    top: unset;
+  }
+
+  .fondAssiette img:nth-of-type(4) {
+    bottom: -125px;
+    left: 160px;
+    top: unset;
+  }
+
+  .fondAssiette img:nth-of-type(5) {
+    bottom: -60px;
+    left: 240px;
+    top: unset;
+  }
+
+  .fondAssiette img:nth-of-type(2),
+  .fondAssiette img:nth-of-type(3),
+  .fondAssiette img:nth-of-type(4),
+  .fondAssiette img:nth-of-type(5) {
+    width: 80px;
+    height: 80px;
+  }
+
+  #mainInspiration h2 {
+    font-size: 2em;
+  }
+
+  #mainInspiration .vaisselleFavorite {
+    padding: 50px 20px 100px 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .collectionVideo {
+    padding: 0 20px;
+  }
+  .collectionVideo article:first-of-type {
+    width: 425px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .collectionVideo article:first-of-type div {
+    width: 180px;
+    height: 180px;
+    left: 128px;
+    top: 65px;
+  }
+
+  .collectionVideo > p {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .openBook article {
+    max-width: 45%;
+    margin: 0;
+  }
+
+  .openBook article:last-of-type {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .openBook {
+    background-image: none;
+    flex-direction: column;
+  }
+  .openBook article:nth-of-type(2) img {
+    order: unset;
+  }
+
+  .openBook article:nth-of-type(2) > div > p {
+    text-align: unset;
+  }
+
+  .openBook article {
+    max-width: 700px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .openBook article > div {
+    margin: 20px 0;
+  }
+
+  .openBook img {
+    margin: 0 20px;
+  }
+
+  .openBook article:first-of-type > div:nth-of-type(2) img {
+    order: 2;
+  }
+
+  .openBook article:first-of-type > div:nth-of-type(2) > p {
+    text-align: right;
+  }
+
+  .openBook article:last-of-type > div:nth-of-type(1) img,
+  .openBook article:last-of-type > div:nth-of-type(3) img {
+    order: 2;
+  }
+
+  .openBook article:last-of-type > div:nth-of-type(1) > p,
+  .openBook article:last-of-type > div:nth-of-type(3) > p {
+    text-align: right;
+  }
+
+  .openBook article > div > p {
+    font-size: 2em;
+  }
+
+  .recette {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .openBook img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  .openBook article > div > div {
+    flex-direction: column;
+  }
+
+  .openBook article > div > p {
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  .openBook article:last-of-type > div:nth-of-type(1) img,
+  .openBook article:last-of-type > div:nth-of-type(3) img {
+    order: unset;
+  }
+
+  .openBook article:first-of-type > div:nth-of-type(2) img {
+    order: unset;
+  }
+
+  .openBook article:last-of-type > div:nth-of-type(1) > p,
+  .openBook article:last-of-type > div:nth-of-type(3) > p {
+    text-align: center;
+  }
+
+  .openBook article:first-of-type > div:nth-of-type(2) > p {
+    text-align: center;
+  }
+
+  .openBook article:nth-of-type(2) > div > p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .vaisselleFavorite {
+    padding: 50px 50px 100px 50px;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
