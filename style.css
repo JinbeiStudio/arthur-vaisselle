@@ -1700,7 +1700,7 @@ output {
 
   .produitVignettes img {
     max-width: 24%;
-    height: auto;
+    height: 100%;
   }
 }
 
