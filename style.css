@@ -1936,6 +1936,7 @@ output {
   align-items: center;
   flex-direction: column;
   padding: 50px 50px 100px 50px;
+  overflow: hidden;
 }
 
 .collectionVideo article:first-of-type {
@@ -2019,6 +2020,10 @@ output {
 
 .openBook p {
   padding: 0 20px;
+}
+
+.openBook {
+  flex-basis: unset;
 }
 
 .openBook article > div > p {
