@@ -412,3 +412,42 @@ function preload() {
   }
 }
 /* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 Menu mobile                                */
+/* -------------------------------------------------------------------------- */
+function hamburger() {
+  let hamburger = document.getElementById("hamburger");
+  let firstNav = document.querySelector(".firstNavMobile");
+  let mobileItems = document.getElementsByClassName("mobileItems");
+  let main = document.querySelector("main");
+  let footer = document.querySelector("footer");
+
+  var myVar = false;
+  hamburger.addEventListener("click", function () {
+    myVar = !myVar;
+    if (myVar) {
+      firstNav.classList.add("firstNavMobileClicked");
+      main.style.display = "none";
+      footer.style.display = "none";
+    } else {
+      firstNav.classList.remove("firstNavMobileClicked");
+      main.style.display = "";
+      footer.style.display = "";
+    }
+  });
+
+  var loop = false;
+  for (let i = 0; i < mobileItems.length; i++) {
+    mobileItems[i].addEventListener("click", function () {
+      loop = !loop;
+      if (loop) {
+        mobileItems[i].nextElementSibling.classList.add("mobileSubNavShow");
+        mobileItems[i].classList.add("rotateArrow");
+      } else {
+        mobileItems[i].nextElementSibling.classList.remove("mobileSubNavShow");
+        mobileItems[i].classList.remove("rotateArrow");
+      }
+    });
+  }
+}
