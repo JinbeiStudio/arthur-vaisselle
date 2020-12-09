@@ -1989,16 +1989,17 @@ output {
   align-items: center;
   margin-top: 20px;
   background-image: url(images/open-book.png);
-  flex-basis: 70vw;
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
+  height: 1000px;
 }
 
 .openBook article {
   display: flex;
   flex-direction: column;
   max-width: 40%;
-  margin: 0 100px 0 80px;
+  margin: 0 100px 0 100px;
 }
 
 .openBook article > div > div {
@@ -2113,6 +2114,18 @@ output {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1450px) {
+  .openBook {
+    height: 1200px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .openBook {
+    height: 1400px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .collectionPresentation {
     flex-direction: column;
@@ -2162,6 +2175,10 @@ output {
 
   .vaisselleFavorite article:nth-of-type(2) > div {
     order: unset;
+  }
+
+  .openBook {
+    height: unset;
   }
 }
 
