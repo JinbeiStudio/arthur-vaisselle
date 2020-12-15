@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Cinzel';
+    font-family: 'cinzelregular';
     src: url('Cinzel-Bold.woff2') format('woff2'),
         url('Cinzel-Bold.woff') format('woff');
     font-weight: bold;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Cinzel';
+    font-family: 'cinzelregular';
     src: url('Cinzel-Black.woff2') format('woff2'),
         url('Cinzel-Black.woff') format('woff');
     font-weight: 900;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Cinzel';
+    font-family: 'cinzelregular';
     src: url('Cinzel-Medium.woff2') format('woff2'),
         url('Cinzel-Medium.woff') format('woff');
     font-weight: 500;
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Cinzel';
+    font-family: 'cinzelregular';
     src: url('Cinzel-Regular.woff2') format('woff2'),
         url('Cinzel-Regular.woff') format('woff');
     font-weight: normal;
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'Cinzel';
+    font-family: 'cinzelregular';
     src: url('Cinzel-SemiBold.woff2') format('woff2'),
         url('Cinzel-SemiBold.woff') format('woff');
     font-weight: 600;
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-    font-family: 'Cinzel';
+    font-family: 'cinzelregular';
     src: url('Cinzel-ExtraBold.woff2') format('woff2'),
         url('Cinzel-ExtraBold.woff') format('woff');
     font-weight: 800;
