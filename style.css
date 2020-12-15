@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'cinzelregular';
+    src: url('cinzel-variablefont_wght-webfont.woff2') format('woff2'),
+         url('cinzel-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
   --lightGrey: #d8dbe2;
   --darkGrey: #373f51;
